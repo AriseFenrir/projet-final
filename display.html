@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Quiz Couleur</title>
+    <nav>
+      <a href="./index.html">deconnection</a>
+      <a href="./leaderboard.html">leaderboard</a>
+    </nav>
+  </head>
+  <body>
+    <div id="username"></div>
+
+    <script>
+      // Récupère le nom de l'utilisateur depuis l'URL
+      const params = new URLSearchParams(window.location.search);
+      const username = params.get("name");
+
+      // Affiche le nom de l'utilisateur dans la page
+      document.getElementById("username").textContent =
+        `Bonjour, ${username} !`;
+    </script>
+    <h1>Quiz Couleur</h1>
+    <div class="wrapper">
+      <p>Choisissez le code RGB qui correspond à cette couleur :</p>
+      <div id="couleur"></div>
+      <div class="reponses">
+        <div class="reponse">rgb(0,0,0)</div>
+        <div class="reponse">rgb(0,0,0)</div>
+        <div class="reponse">rgb(0,0,0)</div>
+        <div class="reponse">rgb(0,0,0)</div>
+      </div>
+      <div class="score">
+        Bonnes réponses à la suite : <span id="score">0</span>
+      </div>
+      <a href="https://fr.wikipedia.org/wiki/Rouge_vert_bleu" target="_blank"
+        >Besoin d'aide ? Rappels sur le RGB</a
+      >
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

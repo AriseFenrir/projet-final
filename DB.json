@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Arise",
+    "password": "test",
+    "score": 1
+  },
+  {
+    "name": "Thomas",
+    "password": "1234",
+    "score": 0
+  },
+  {
+    "name": "Mike",
+    "password": "renard",
+    "score": 0
+  },
+  {
+    "name": "alex",
+    "password": "alex",
+    "score": 0
+  },
+  {
+    "name": "Brendan",
+    "password": "brendan",
+    "score": 2
+  }
+]

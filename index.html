@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Connexion</title>
+    <nav>
+      <a href="./inscription.html">Pas de compte ? Inscrivez-vous !</a>
+    </nav>
+  </head>
+  <body>
+    <h1>Connexion</h1>
+    <div class="wrapper">
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Nom"
+        required
+        minlength="1"
+        maxlength="20"
+        size="10"
+      />
+      <input
+        type="text"
+        id="password"
+        name="password"
+        placeholder="Mot de passe"
+        required
+        minlength="1"
+        maxlength="20"
+        size="10"
+      />
+    </div>
+    <button onclick="test()" id="Button">Validation</button>
+    <script src="./handleCo.js"></script>
+  </body>
+</html>
